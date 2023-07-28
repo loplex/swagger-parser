@@ -11,6 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>swagger-parser-cli</artifactId>
+    <version>2.1.16-bugfix1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>swagger-parser (executable)</name>
 
@@ -91,7 +92,7 @@
         <dependency>
             <groupId>io.swagger.parser.v3</groupId>
             <artifactId>swagger-parser-v3</artifactId>
-            <version>2.1.16</version>
+            <version>2.1.16-bugfix1-SNAPSHOT</version>
             <scope>compile</scope>
         </dependency>
         <dependency>

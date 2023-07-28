@@ -262,7 +262,8 @@ public class PathsProcessor {
                 }
             }if (composedSchema.getOneOf() != null) {
                 for (Schema innerModel : composedSchema.getOneOf()) {
-                    updateRefs(innerModel, pathRef);
+                    updateRefs(innerModel, "");
+                    //updateRefs(innerModel, pathRef);
                 }
             }
         }

@@ -8,6 +8,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>swagger-parser-v2-converter</artifactId>
+    <version>2.1.16-bugfix1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>swagger-parser-v2-converter</name>
     <build>

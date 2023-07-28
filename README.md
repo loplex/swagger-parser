@@ -1,10 +1,8 @@
 # Swagger Parser <img src="https://raw.githubusercontent.com/swagger-api/swagger.io/wordpress/images/assets/SW-logo-clr.png" height="50" align="right">
 
-**NOTE:** If you're looking for `swagger-parser` 1.X and OpenAPI 2.0, please refer to [v1 branch](https://github.com/swagger-api/swagger-parser/tree/v1)
-
-**NOTE:** Since version 2.1.0 Swagger Parser supports OpenAPI 3.1; see [this page](https://github.com/swagger-api/swagger-core/wiki/Swagger-2.X---OpenAPI-3.1) for details
-
-![Build Master - Java 11, 14 and 17](https://github.com/swagger-api/swagger-parser/workflows/Build%20Test%20Deploy%20master/badge.svg?branch=master)
+## FORK NOTE
+- https://github.com/loplex/swagger-parser
+- try to fix bug in merging multiple OAS spec. files into one 
 
 # Table of contents
 
@@ -114,7 +112,7 @@ You can include this library from Sonatype OSS for SNAPSHOTS, or Maven central f
 <dependency>
   <groupId>io.swagger.parser.v3</groupId>
   <artifactId>swagger-parser</artifactId>
-  <version>2.1.16</version>
+  <version>2.1.16-bugfix1-SNAPSHOT</version>
 </dependency>
 ```
 

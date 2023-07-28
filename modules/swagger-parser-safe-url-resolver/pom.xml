@@ -11,6 +11,7 @@
     </parent>
 
     <artifactId>swagger-parser-safe-url-resolver</artifactId>
+    <version>2.1.16-bugfix1-SNAPSHOT</version>
 
     <dependencies>
         <dependency>
