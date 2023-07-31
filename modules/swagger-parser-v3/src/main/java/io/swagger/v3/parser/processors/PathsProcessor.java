@@ -254,11 +254,13 @@ public class PathsProcessor {
             ComposedSchema composedSchema = (ComposedSchema) model;
             if (composedSchema.getAllOf() != null) {
                 for (Schema innerModel : composedSchema.getAllOf()) {
-                    updateRefs(innerModel, pathRef);
-                }
+                    updateRefs(innerModel, "");
+					//updateRefs(innerModel, pathRef);
+				}
             }if (composedSchema.getAnyOf() != null) {
                 for(Schema innerModel : composedSchema.getAnyOf()) {
-                    updateRefs(innerModel, pathRef);
+					updateRefs(innerModel, "");
+					//updateRefs(innerModel, pathRef);
                 }
             }if (composedSchema.getOneOf() != null) {
                 for (Schema innerModel : composedSchema.getOneOf()) {
