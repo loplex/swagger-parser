@@ -245,7 +245,8 @@ public class PathsProcessor {
                 for(String key : properties.keySet()) {
                     Schema property = properties.get(key);
                     if (property != null) {
-                        updateRefs(property, pathRef);
+                        updateRefs(property, "");
+                        //updateRefs(property, pathRef);
                     }
                 }
             }
@@ -255,12 +256,12 @@ public class PathsProcessor {
             if (composedSchema.getAllOf() != null) {
                 for (Schema innerModel : composedSchema.getAllOf()) {
                     updateRefs(innerModel, "");
-					//updateRefs(innerModel, pathRef);
-				}
+                    //updateRefs(innerModel, pathRef);
+                }
             }if (composedSchema.getAnyOf() != null) {
                 for(Schema innerModel : composedSchema.getAnyOf()) {
-					updateRefs(innerModel, "");
-					//updateRefs(innerModel, pathRef);
+                    updateRefs(innerModel, "");
+                    //updateRefs(innerModel, pathRef);
                 }
             }if (composedSchema.getOneOf() != null) {
                 for (Schema innerModel : composedSchema.getOneOf()) {
@@ -272,7 +273,8 @@ public class PathsProcessor {
         else if(model instanceof ArraySchema) {
             ArraySchema arraySchema = (ArraySchema) model;
             if(arraySchema.getItems() != null) {
-                updateRefs(arraySchema.getItems(), pathRef);
+                updateRefs(arraySchema.getItems(), "");
+                //updateRefs(arraySchema.getItems(), pathRef);
             }
         }
     }
