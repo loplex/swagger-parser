@@ -246,7 +246,6 @@ public class PathsProcessor {
                     Schema property = properties.get(key);
                     if (property != null) {
                         updateRefs(property, "");
-                        //updateRefs(property, pathRef);
                     }
                 }
             }
@@ -256,17 +255,14 @@ public class PathsProcessor {
             if (composedSchema.getAllOf() != null) {
                 for (Schema innerModel : composedSchema.getAllOf()) {
                     updateRefs(innerModel, "");
-                    //updateRefs(innerModel, pathRef);
                 }
             }if (composedSchema.getAnyOf() != null) {
                 for(Schema innerModel : composedSchema.getAnyOf()) {
                     updateRefs(innerModel, "");
-                    //updateRefs(innerModel, pathRef);
                 }
             }if (composedSchema.getOneOf() != null) {
                 for (Schema innerModel : composedSchema.getOneOf()) {
                     updateRefs(innerModel, "");
-                    //updateRefs(innerModel, pathRef);
                 }
             }
         }
@@ -274,7 +270,6 @@ public class PathsProcessor {
             ArraySchema arraySchema = (ArraySchema) model;
             if(arraySchema.getItems() != null) {
                 updateRefs(arraySchema.getItems(), "");
-                //updateRefs(arraySchema.getItems(), pathRef);
             }
         }
     }

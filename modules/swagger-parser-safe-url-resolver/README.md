@@ -26,7 +26,7 @@ Add the following to you `pom.xml` file under `dependencies`
     <groupId>io.swagger.parser.v3</groupId>
     <artifactId>swagger-parser-safe-url-resolver</artifactId>
     // version of swagger-parser being used
-    <version>2.1.16-bugfix1-SNAPSHOT</version> 
+    <version>2.1.14</version> 
 </dependency>
 ```
 

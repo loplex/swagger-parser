@@ -9,7 +9,6 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>swagger-parser</artifactId>
     <packaging>jar</packaging>
-    <version>2.1.16-bugfix1-SNAPSHOT</version>
     <name>swagger-parser</name>
 
     <dependencies>
